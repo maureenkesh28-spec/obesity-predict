@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd  # Import pandas for handling data
  
 # Load your saved model (update path if needed)
-model = joblib.load('Datasetsmodel2 (1).joblib')
+model = joblib.load('Datasetsmodel2.joblib')
  
 st.title('NObeyesdad Prediction App')
 st.write("This app predicts obesity levels (NObeyesdad) based on several lifestyle features.")
@@ -53,3 +53,4 @@ if st.button('Predict'):
     predicted_class = NObeyesdad_classes[prediction[0]]
 
     st.success(f'Predicted NObeyesdad category: **{predicted_class}**')
+
